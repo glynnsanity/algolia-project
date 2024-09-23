@@ -40,8 +40,8 @@ body {
 
 /* Global Styles */
 body {
-  font-family: 'Roboto', sans-serif;  /* Override font with !important */
-  background-color: #F4F6F8;          /* Light neutral background */
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F6F8;  
   margin: 0;
   padding: 0;
 }
@@ -50,15 +50,15 @@ body {
 .Container {
   display: flex;
   padding: 20px;
-  gap: 20px;                           /* Space between side panel and main content */
-  box-sizing: border-box;              /* Ensure consistent box sizing */
+  gap: 20px;                         
+  box-sizing: border-box;              
 }
 
 /* Side Panel Flexbox */
 .SidePanel {
-  flex: 0 0 300px;                    /* Fixed width for side panel */
-  background-color: #F9F9F9;          /* Light gray background */
-  border-right: 1px solid #E0E0E0;    /* Subtle border */
+  flex: 0 0 300px;                    
+  background-color: #F9F9F9;       
+  border-right: 1px solid #E0E0E0;  
   padding: 20px;
   box-sizing: border-box;
   display: flex;
@@ -69,13 +69,13 @@ body {
 /* Panel and Header Styling */
 .SidePanel .ais-Panel {
   padding: 20px;
-  border-bottom: 1px solid #E0E0E0;   /* Light gray border between sections */
+  border-bottom: 1px solid #E0E0E0;   
 }
 
 .SidePanel .ais-Panel-header {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #1A2E35;                     /* Dark gray text for headers */
+  color: #1A2E35;                    
   margin-bottom: 10px;
 }
 
@@ -87,22 +87,22 @@ body {
 .SidePanel .ais-RefinementList-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;                /* Space between list items */
+  margin-bottom: 10px;                
 }
 
 .SidePanel .ais-RefinementList-labelText {
   font-size: 0.9rem;
-  color: #333;                        /* Darker gray for text */
+  color: #333;                        
 }
 
 /* Hover and Checked States */
 .SidePanel .ais-RefinementList-label:hover {
-  color: #0055FF;                     /* Algolia blue on hover */
+  color: #0055FF;                     
   cursor: pointer;
 }
 
 .SidePanel .ais-RefinementList-checkbox:checked + .ais-RefinementList-labelText {
-  color: #0055FF;                     /* Change text color when checked */
+  color: #0055FF;                    
 }
 
 /* Checkbox Custom Styling */
@@ -117,31 +117,20 @@ body {
 }
 
 .SidePanel .ais-RefinementList-checkbox:checked {
-  /* background-color: #0055FF;          Algolia blue for checked state */
+  
   border-color: #0055FF;
 }
 
-/* .SidePanel .ais-RefinementList-checkbox:checked:after {
-  content: '';
-  display: block;
-  width: 6px;
-  height: 6px;
-  background: white;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-} */
-
 /* Hover Effects for Items */
 .SidePanel .ais-RefinementList-item:hover {
-  background-color: #F0F0F0;          /* Light gray on hover */
+  background-color: #F0F0F0;          
   transition: background-color 0.2s ease;
 }
 
 /* Main Product Listing Flexbox */
 .SidePanel .ais-Hits {
-  background-color: #FFFFFF;           /* White background */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #FFFFFF;          
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
   box-sizing: border-box;
@@ -152,33 +141,33 @@ body {
   display: flex;
   align-items: center;
   padding: 15px 0;
-  border-bottom: 1px solid #E0E0E0;   /* Divider between products */
+  border-bottom: 1px solid #E0E0E0;
 }
 
 /* Image in Flexbox */
 .SidePanel .ais-Hits-item img {
-  width: 100px;                       /* Consistent image width */
+  width: 100px;                     
   height: auto;
-  margin-right: 20px;                 /* Space between image and text */
+  margin-right: 20px;               
 }
 
 /* Flexbox for Text and Price */
 .SidePanel .ais-Hits-item div {
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;     /* Product name left, price right */
+  justify-content: space-between;    
   align-items: center;
 }
 
 /* Product Name and Price Styling */
 .SidePanel .ais-Hits-item div span {
   font-size: 1rem;
-  color: #333;                        /* Darker gray for product name */
+  color: #333;                       
 }
 
 .SidePanel .ais-Hits-item div span:last-child {
   font-weight: bold;
-  color: #0055FF;                     /* Algolia blue for the price */
+  color: #0055FF;                   
 }
 
 .SidePanel .ais-Hits-item div span:first-child {
@@ -187,13 +176,13 @@ body {
 
 /* Hover Effect for Product Items */
 .SidePanel .ais-Hits-item:hover {
-  background-color: #F9F9F9;          /* Light gray on hover */
+  background-color: #F9F9F9;        
   transition: background-color 0.3s ease;
 }
 
 /* Interaction Feedback for Headers */
 .SidePanel .ais-Panel-header:hover {
-  color: #0055FF;                     /* Algolia blue for headers on hover */
+  color: #0055FF;                    
   transition: color 0.2s ease;
 }
 
