@@ -1,4 +1,3 @@
-import { warnOptionHasBeenMovedOutOfExperimental } from 'next/dist/server/config';
 import React from 'react';
 
 export function Panel({

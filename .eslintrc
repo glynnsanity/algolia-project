@@ -1,9 +1,13 @@
 {
-  "extends": ["plugin:@next/next/recommended"],
+  "parser": "@typescript-eslint/parser",  // Specifies the ESLint parser for TypeScript
+  "extends": [
+    "plugin:@next/next/recommended",      // Next.js recommended rules
+    "plugin:@typescript-eslint/recommended"  // TypeScript-specific rules
+  ],
   "rules": {
-    // This rule is not able to find the `pages/` folder in the monorepo.
-    "@next/next/no-html-link-for-pages": ["off"],
-    "react/react-in-jsx-scope": "off",
-    "spaced-comment": ["error", "always", { "markers": ["/"] }]
+    "@next/next/no-html-link-for-pages": "off",  // Disable Next.js rule for monorepos
+    "react/react-in-jsx-scope": "off",  // No need for React in scope in Next.js
+    "spaced-comment": ["error", "always", { "markers": ["/"] }],
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
