@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -rf .next node_modules",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d .next"
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out",
+    "export": "next export"
   },
   "dependencies": {
     "algoliasearch": "5.1.1",
