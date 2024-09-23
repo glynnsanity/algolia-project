@@ -1,18 +1,14 @@
-This example shows how to do server side rendering with next.js (App Router) and InstantSearchNext. There's a live example here: https://codesandbox.io/p/devbox/github/algolia/instantsearch.js/tree/master/examples/react/next-app-router.
 
-[![Edit next](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/github/algolia/instantsearch.js/tree/master/examples/react/next-app-router)
+Glynn Jordan - Algolia interview homework assignment 2024
 
-## Clone the example
+I used the [Next App Router](https://github.com/algolia/instantsearch/tree/master/examples/react/next-app-router) example repo within the InstantSearch monorepo to get started using the React libraries for instantsearch functionality.
 
-```sh
-curl https://codeload.github.com/algolia/instantsearch/tar.gz/master | tar -xz --strip=3 instantsearch-master/examples/react/next-app-router
-```
+Things I added to the example as part of this project:
+- Analytics tracking (Insights Middleware)
+- AB testing
+- SortBy component
+- CSS Styling
 
-## Start the example
+## XML Conversion and Index Data
 
-```sh
-yarn install --no-lockfile
-yarn run dev
-```
-
-Read more about React InstantSearchNext [in our documentation](https://www.algolia.com/doc/guides/building-search-ui/going-further/server-side-rendering/react/#app-router-experimental).
+In the "data-manager" folder, you'll see my code for converting the given xml into JSON in the "convert.js" file, and for sending data to Algolia in the "saveData.js" file.
