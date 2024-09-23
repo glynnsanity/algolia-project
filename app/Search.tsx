@@ -1,6 +1,5 @@
 'use client';
 
-require('dotenv').config();
 import { liteClient as algoliasearch } from 'algoliasearch/lite';
 import Image from 'next/image';
 import { Hit as AlgoliaHit } from 'instantsearch.js';
