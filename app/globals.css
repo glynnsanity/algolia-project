@@ -1,0 +1,338 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  padding: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: minmax(min-content, 200px) 1fr;
+  gap: 0.5rem;
+}
+
+.SidePanel {
+  padding: 25px;
+}
+
+.ais-Panel-header {
+  font-size: 1.5rem;
+}
+
+.ais-Hits-item {
+  gap: 20px;
+}
+
+.Hit-price { 
+  font-weight: bold;
+}
+
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;  /* Override font with !important */
+  background-color: #F4F6F8;          /* Light neutral background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox Layout for Container */
+.Container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;                           /* Space between side panel and main content */
+  box-sizing: border-box;              /* Ensure consistent box sizing */
+}
+
+/* Side Panel Flexbox */
+.SidePanel {
+  flex: 0 0 300px;                    /* Fixed width for side panel */
+  background-color: #F9F9F9;          /* Light gray background */
+  border-right: 1px solid #E0E0E0;    /* Subtle border */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+/* Panel and Header Styling */
+.SidePanel .ais-Panel {
+  padding: 20px;
+  border-bottom: 1px solid #E0E0E0;   /* Light gray border between sections */
+}
+
+.SidePanel .ais-Panel-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1A2E35;                     /* Dark gray text for headers */
+  margin-bottom: 10px;
+}
+
+.SidePanel .ais-Panel-body {
+  margin-bottom: 20px;
+}
+
+/* Refinement List and Items */
+.SidePanel .ais-RefinementList-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;                /* Space between list items */
+}
+
+.SidePanel .ais-RefinementList-labelText {
+  font-size: 0.9rem;
+  color: #333;                        /* Darker gray for text */
+}
+
+/* Hover and Checked States */
+.SidePanel .ais-RefinementList-label:hover {
+  color: #0055FF;                     /* Algolia blue on hover */
+  cursor: pointer;
+}
+
+.SidePanel .ais-RefinementList-checkbox:checked + .ais-RefinementList-labelText {
+  color: #0055FF;                     /* Change text color when checked */
+}
+
+/* Checkbox Custom Styling */
+.SidePanel .ais-RefinementList-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.SidePanel .ais-RefinementList-checkbox:checked {
+  /* background-color: #0055FF;          Algolia blue for checked state */
+  border-color: #0055FF;
+}
+
+/* .SidePanel .ais-RefinementList-checkbox:checked:after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+} */
+
+/* Hover Effects for Items */
+.SidePanel .ais-RefinementList-item:hover {
+  background-color: #F0F0F0;          /* Light gray on hover */
+  transition: background-color 0.2s ease;
+}
+
+/* Main Product Listing Flexbox */
+.SidePanel .ais-Hits {
+  background-color: #FFFFFF;           /* White background */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Flexbox for Product Items */
+.SidePanel .ais-Hits-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #E0E0E0;   /* Divider between products */
+}
+
+/* Image in Flexbox */
+.SidePanel .ais-Hits-item img {
+  width: 100px;                       /* Consistent image width */
+  height: auto;
+  margin-right: 20px;                 /* Space between image and text */
+}
+
+/* Flexbox for Text and Price */
+.SidePanel .ais-Hits-item div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;     /* Product name left, price right */
+  align-items: center;
+}
+
+/* Product Name and Price Styling */
+.SidePanel .ais-Hits-item div span {
+  font-size: 1rem;
+  color: #333;                        /* Darker gray for product name */
+}
+
+.SidePanel .ais-Hits-item div span:last-child {
+  font-weight: bold;
+  color: #0055FF;                     /* Algolia blue for the price */
+}
+
+.SidePanel .ais-Hits-item div span:first-child {
+  font-weight: 500;
+}
+
+/* Hover Effect for Product Items */
+.SidePanel .ais-Hits-item:hover {
+  background-color: #F9F9F9;          /* Light gray on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Interaction Feedback for Headers */
+.SidePanel .ais-Panel-header:hover {
+  color: #0055FF;                     /* Algolia blue for headers on hover */
+  transition: color 0.2s ease;
+}
+
+
+
+
+
+
+
+/* Center Section Wrapper */
+.centerSection-wrapper {
+  font-family: 'Roboto', sans-serif !important;
+  background-color: #FFFFFF !important;
+  padding: 20px !important;
+  box-sizing: border-box !important;
+  width: 980px;
+}
+
+
+/* Search Box Styling */
+.centerSection-wrapper .ais-SearchBox {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 10px 0 !important;
+  width: 100% !important;
+}
+
+.centerSection-wrapper .ais-SearchBox-input {
+  width: 100% !important;
+  max-width: 620px !important;             /* Ensure a max width for the search box */
+  padding: 12px 15px 12px 40px !important;           /* Add padding to ensure the text is not cut off */
+  border: 1px solid #ddd !important;
+  border-radius: 5px !important;
+  font-size: 1rem !important;              /* Set font-size for consistent text display */
+  line-height: 1.5 !important;             /* Ensure proper text spacing */
+  overflow: visible !important;            /* Prevent clipping of text */
+  box-sizing: border-box !important;       /* Ensures padding is included in the width/height */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.centerSection-wrapper .ais-SearchBox-input::placeholder {
+  color: #999 !important;                  /* Placeholder color for contrast */
+}
+
+.centerSection-wrapper .ais-SearchBox-submit,
+.centerSection-wrapper .ais-SearchBox-reset {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.centerSection-wrapper .ais-SearchBox-submit svg,
+.centerSection-wrapper .ais-SearchBox-reset svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: #0055FF !important;               /* Algolia blue for the icons */
+}
+
+.centerSection-wrapper .ais-SortBy {
+  width: 200px;
+}
+
+.centerSection-wrapper .ais-SearchBox-reset {
+  left: 590px;
+}
+
+
+
+
+
+
+
+
+/* Product List Styling */
+.centerSection-wrapper .ais-Hits-list {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.centerSection-wrapper .ais-Hits-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important; /* Align product name and price */
+  padding: 20px !important;
+  margin-bottom: 15px !important;          /* Space between product cards */
+  background-color: #fff !important;       /* Card-like background */
+  border-radius: 10px !important;          /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for card effect */
+  transition: box-shadow 0.3s ease !important;
+  box-sizing: border-box !important;
+  cursor: pointer;
+}
+
+.centerSection-wrapper .ais-Hits-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important; /* Hover effect for cards */
+}
+
+
+.centerSection-wrapper .ais-Hits-item .ais-Highlight {
+  font-size: 1rem !important;
+  color: #333 !important;                  /* Darker gray for product name */
+  flex-grow: 1 !important;                 /* Make the text grow to take available space */
+  margin-right: 30px !important;           /* More space between product name and price */
+}
+
+.centerSection-wrapper .ais-Hits-item .Hit-price {
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  color: #28a745 !important;             /* Green for positive emphasis */
+  background-color: #e8f5e9 !important;  /* Light green background for focus */
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+}
+
+/* Pagination (if applicable) */
+.centerSection-wrapper .ais-Pagination {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 20px !important;
+}
+
+.centerSection-wrapper .ais-Pagination-item {
+  margin: 0 5px !important;
+  padding: 5px 10px !important;
+  background-color: #FFFFFF !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.centerSection-wrapper .ais-Pagination-item:hover {
+  background-color: #F0F0F0 !important;
+}
+
+.centerSection-wrapper .ais-Pagination-item--selected {
+  background-color: #0055FF !important;
+  color: #FFF !important;
+  border-color: #0055FF !important;
+}
