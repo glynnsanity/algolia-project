@@ -22,7 +22,7 @@ import { Panel } from '../components/Panel';
 import aa from 'search-insights';
 
 const APP_ID='TBEEBDFYJF'
-const API_KEY='6602e6636c815555ee513fb855ea2e2c'
+const API_KEY='bdefc37a89c8bfd234326a5325e71836'
 
 aa('init', {
   appId: APP_ID,
