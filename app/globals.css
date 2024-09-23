@@ -213,20 +213,20 @@ body {
 
 .centerSection-wrapper .ais-SearchBox-input {
   width: 100% !important;
-  max-width: 620px !important;             /* Ensure a max width for the search box */
-  padding: 12px 15px 12px 40px !important;           /* Add padding to ensure the text is not cut off */
+  max-width: 620px !important;            
+  padding: 12px 15px 12px 40px !important;       
   border: 1px solid #ddd !important;
   border-radius: 5px !important;
-  font-size: 1rem !important;              /* Set font-size for consistent text display */
-  line-height: 1.5 !important;             /* Ensure proper text spacing */
-  overflow: visible !important;            /* Prevent clipping of text */
-  box-sizing: border-box !important;       /* Ensures padding is included in the width/height */
+  font-size: 1rem !important;              
+  line-height: 1.5 !important;             
+  overflow: visible !important;           
+  box-sizing: border-box !important;      
   outline: none !important;
   box-shadow: none !important;
 }
 
 .centerSection-wrapper .ais-SearchBox-input::placeholder {
-  color: #999 !important;                  /* Placeholder color for contrast */
+  color: #999 !important;                 
 }
 
 .centerSection-wrapper .ais-SearchBox-submit,
@@ -240,7 +240,7 @@ body {
 .centerSection-wrapper .ais-SearchBox-reset svg {
   width: 20px !important;
   height: 20px !important;
-  fill: #0055FF !important;               /* Algolia blue for the icons */
+  fill: #0055FF !important;               
 }
 
 .centerSection-wrapper .ais-SortBy {
@@ -268,34 +268,34 @@ body {
 .centerSection-wrapper .ais-Hits-item {
   display: flex !important;
   align-items: center !important;
-  justify-content: space-between !important; /* Align product name and price */
+  justify-content: space-between !important; 
   padding: 20px !important;
-  margin-bottom: 15px !important;          /* Space between product cards */
-  background-color: #fff !important;       /* Card-like background */
-  border-radius: 10px !important;          /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for card effect */
+  margin-bottom: 15px !important;          
+  background-color: #fff !important;       
+  border-radius: 10px !important;         
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; 
   transition: box-shadow 0.3s ease !important;
   box-sizing: border-box !important;
   cursor: pointer;
 }
 
 .centerSection-wrapper .ais-Hits-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important; /* Hover effect for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
 
 .centerSection-wrapper .ais-Hits-item .ais-Highlight {
   font-size: 1rem !important;
-  color: #333 !important;                  /* Darker gray for product name */
-  flex-grow: 1 !important;                 /* Make the text grow to take available space */
-  margin-right: 30px !important;           /* More space between product name and price */
+  color: #333 !important;                  
+  flex-grow: 1 !important;                 
+  margin-right: 30px !important;           
 }
 
 .centerSection-wrapper .ais-Hits-item .Hit-price {
   font-size: 1.1rem !important;
   font-weight: bold !important;
-  color: #28a745 !important;             /* Green for positive emphasis */
-  background-color: #e8f5e9 !important;  /* Light green background for focus */
+  color: #28a745 !important;             
+  background-color: #e8f5e9 !important;  
   padding: 5px 10px !important;
   border-radius: 5px !important;
 }
